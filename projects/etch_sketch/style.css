@@ -1,0 +1,25 @@
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 960px;
+    border: 1px solid black;
+}
+
+.grid {
+    flex-shrink: 0;
+    box-sizing: border-box;
+}
+.grid:hover, .grid.colored {
+    background-color: black;
+}
+
+.introduction {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.controls {
+    text-align: center;
+    margin-top: 20px;
+}

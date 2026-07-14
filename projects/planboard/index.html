@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-content flex space-around">
+
+    <div class="modal" id="editModal">
+        <div class="modal-content flex column">
+            <span class="close">&times;</span>
+            <h2>Add a new task</h2>
+            <label for="taskTitle">Task title:</label>
+            <input type="text" id="taskTitle">
+
+            <label for="taskDescription">Task description:</label>
+            <textarea id="taskDescription"></textarea>
+
+            <select name="taskStatus" id="taskStatus">
+                <option value="backlog">Backlog</option>
+                <option value="inProgress">In progress</option>
+                <option value="feedback">Feedback</option>
+            </select>
+            <button id="addTask">Add task</button>
+        </div>
+    </div>
+
+        <div class="backlogContent">
+            <h2>Backlog</h2>
+            <ul class="taskList">
+                <li class="newTask">
+                    <div id="createNewBacklog" class="createNewBacklog">+</div>
+                </li>
+            </ul>
+        </div>
+        <div class="inProgressContent">
+            <h2>In progress</h2>
+            <ul class="taskList">
+                <li class="newTask">
+                    <div id="createNewInProgress" class="createNewInProgress">+</div>
+                </li>
+            </ul>
+        </div>
+        <div class="feedback">
+            <h2>Feedback</h2>
+            <ul class="taskList">
+                <li class="newTask">
+                    <div id="createNewFeedback" class="createNewFeedback">+</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

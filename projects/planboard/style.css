@@ -1,0 +1,122 @@
+body {
+    background: #c19bc9;
+    background: linear-gradient(90deg, rgba(193, 155, 201, 1) 0%, rgba(117, 80, 186, 1) 0%, rgba(23, 37, 71, 1) 100%);
+
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.row {
+    flex-direction: row;
+}
+
+/* Website components CSS */
+
+.main-content {
+    width: 80%;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.taskList {
+    padding: 0;
+}
+
+.newTask {
+    list-style: none;
+}
+
+.createNewBacklog, .createNewInProgress, .createNewFeedback {
+    border: 2px dashed black;
+    padding: 50px 100px;
+}
+
+.createNewBacklog:hover, .createNewInProgress:hover, .createNewFeedback:hover {
+    border: 2px dashed black;
+    padding: 50px 100px;
+    cursor: pointer;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
+}
+
+.modal label {
+    padding: 10px;
+}
+
+.modal textarea {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.modal select {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+li.task-item {
+    list-style: none;
+    border: 2px solid black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 25px;;
+    padding-bottom: 15px;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.task-item[draggable="true"] {
+    cursor: grab;
+}
+
+.task-item.dragging {
+    opacity: 0.4;
+    cursor: grabbing;
+}
+
+.edit-btn {
+    flex-shrink: 0;
+    margin-left: 8px;
+    cursor: pointer;
+}

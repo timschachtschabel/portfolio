@@ -1,0 +1,404 @@
+/* RESET STYLE */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    vertical-align: baseline;
+    font-style: normal;
+}
+
+/* GENERAL STYLING */
+
+h1,h2,h3,h4,h5 {
+    font-family: "Manrope", sans-serif;
+
+}
+
+p, a {
+    font-family: 'Fraunces', serif !important;
+}
+
+body {
+    width: 100%;
+    color: #24053E;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+/* WEBSITE STYLING PER SECTION */
+/* HEADER STYLING */
+
+header {
+    background-color: #24053E;
+}
+
+.headercontent {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-items: center;
+}
+
+.apply a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    border-bottom: 3px solid #44FFA1;
+    padding-bottom: 2px;
+}
+
+/* BANNER SECTION */
+
+.banner {
+    background-color: #FCF8FF;
+    background-image: url(../assets/background-hero.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.cta {
+    background-color: #44FFA1;
+    color: #24053E;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.bannercontent {
+    position: relative;
+    padding-bottom: 40px;
+}
+
+.bannercontent span {
+    border-bottom: 3px solid #44FFA1;
+}
+
+.heroimage {
+    width:60%;
+    position: absolute;
+    top: 110%;
+    margin: auto;
+    text-align: center;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+/* Sellingpoints section  */
+
+.sellingpoints {
+    background-color: #FCF8FF;
+    padding-top: 50px;
+    border-bottom-left-radius: 50% 5%;
+    border-bottom-right-radius: 50% 5%;
+    overflow: hidden;
+}
+
+.sellingpointscontent {
+    text-align: center;
+    background-color: #FCF8FF;
+}
+
+.sellingpoint {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.sellingpoint h3{
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.pointer {
+    border: 1px solid #24053E;
+    background-color: transparent;
+    display: inline;
+    padding: 10px 18px;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+/* APPLY SECTION */
+
+.applycontent {
+    padding-top: 100px;
+}
+
+.founderimage {
+    position: relative;
+    height: 100px;
+    left: 0%;
+}
+
+.founderimage img {
+    width: 60%;
+    position: absolute;
+    top: -50%;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    text-align: center;
+    margin: auto;
+}
+
+.foundercontent {
+    margin: auto;
+    text-align: center;
+    background-color: #24053E;
+    color: white;
+    padding: 50px 10px
+}
+
+.foundercontent h2 {
+    padding-bottom: 30px;
+}
+
+.foundercontent button {
+    background-color: #44FFA1;
+    padding: 20px 40px;
+    margin-top: 40px;
+    color: #24053E;
+    font-weight: bold;
+}
+
+/* FOOTER  */
+
+.footercontent {
+    text-align: center;
+}
+
+.footerlogo {
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.socials {
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+.socials img {
+    padding: 0px 20px;
+}
+
+/* MEDIA QUERIES FOR RESPONSIVE DESIGN  */
+
+/* MAKE SURE THE PAGE DOESN'T BREAK BEFORE REACHING THE TABLET DESIGN */
+
+@media only screen and (min-width: 400px) {
+    .sellingpoints {
+        padding-top: 100px;
+    }
+
+    .founderimage {
+        height: 116px;
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    .founderimage {
+        height: 150px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .sellingpoints {
+        padding-top: 150px;
+    }
+    
+    .founderimage {
+        height: 190px;
+    }
+
+    .banner {
+        background-size: cover;
+        background-position: bottom;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+        #spiralleft, #spiralright, #spiralbottom {
+        display: none;        
+ }
+}    
+
+/* TABLET DESIGN  */
+
+@media only screen and (min-width: 767px) {
+    .banner {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    #spiralleft {
+        position: absolute;
+        left: -30%;
+        top: -70%;
+        width: 40%;
+    }
+    #spiralright {
+        position: absolute;
+        top: 0%;
+        right: -15%;
+    }
+
+    .heroimage {
+        top: 100%;
+    }
+
+    .sellingpoint {
+        display: flex;
+        align-items: center;
+    }
+
+    .sellingpointtext {
+        text-align: left;
+        margin-left: 40px;
+    }
+
+    .sellingpointtext h3 {
+        font-size: 1.5rem;
+    }
+
+    .applycontent {
+        padding-top: 50px;
+    }
+
+    .foundercontent {
+        width: 75%;
+        float: right;
+        text-align: left;
+        padding-left: 40px;;
+        position: relative;
+    }
+
+    .founderimage {
+        top: 20%;
+        left: -25%;
+
+    }
+
+    .founderimage img {
+        width: 30%;
+        top: 10%;
+    }
+
+    #spiralbottom {
+        position: absolute;
+        bottom: -30%;
+        right: 3%;
+    }
+
+    #spiralbottom img{
+        width: 80%; 
+    }
+}
+
+@media only screen and (min-width: 1180px) {
+    .heroimage {
+        width: 50%;
+    }
+
+    .founderimage {
+        top: -32%;
+        left: -28%;
+    }
+}
+
+@media only screen and (min-width: 1480px) {
+    .heroimage {
+        width: 40%;
+    }
+}
+
+
+/* DESKTOP VERSION  */
+
+
+@media only screen and (min-width: 1920px) {
+
+    .container {
+        width: 1200px;
+    }
+
+    .banner {
+        padding-bottom: 300px;
+    }
+
+    .bannercontent {
+        font-size: larger;
+    }
+
+        #spiralleft {
+        position: absolute;
+        left: -34%;
+        top: -70%;
+        width: 20%;
+    }
+
+    #spiralright {
+        position: absolute;
+        top: 60%;
+        right: -32%;
+    }
+
+    .heroimage {
+        width: 50%;
+        top: 160%;
+    }
+
+    .sellingpointscontent {
+        display: flex;
+    }
+
+    .sellingpoint {
+        flex-direction: column;
+        font-size: larger;
+    }
+
+    .sellingpointscontent {
+        text-align: center !important;
+    }
+
+    .sellingpointtext {
+        text-align: center;
+    }
+
+    .founderimage {
+        width: 121%;
+    }
+
+    .foundercontent {
+        width: 54%;
+    }
+}
