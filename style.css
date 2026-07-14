@@ -423,6 +423,10 @@ footer i {
   align-items: center;
 }
 
+.skillsImage1, .skillsImage2, .skillsImage3 {
+    margin: auto;
+}
+
 .serviceSection h4 {
   color: var(--accent-gold);
   font-size: 1.2rem;
